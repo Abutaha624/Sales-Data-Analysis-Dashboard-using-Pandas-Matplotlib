@@ -1,0 +1,120 @@
+نتائج تحليل بيانات المتجر
+========================================
+إجمالي الطلبات: 9994
+إجمالي المبيعات: 2,297,200.86
+إجمالي الأرباح: 286,397.02
+أفضل فئة: Technology
+أفضل منطقة: West
+معامل الارتباط: 0.066
+              
+1. قراءة البيانات من ملف CSV...
+   تم تحميل 9994 سجل
+2. تنظيف البيانات...
+   بعد التنظيف: 9994 سجل
+3. التحقق من صحة البيانات...
+4. التحليل الأساسي...
+   أ) المبيعات حسب الفئة:
+Category
+Furniture          741999.7953
+Office Supplies    719047.0320
+Technology         836154.0330
+Name: Sales, dtype: float64
+
+   ب) الأرباح حسب المنطقة:
+Region
+Central     39706.3625
+East        91522.7800
+South       46749.4303
+West       108418.4489
+Name: Profit, dtype: float64
+
+   ج) متوسط الأرباح حسب المنطقة:
+Region
+Central    17.092709
+East       32.135808
+South      28.857673
+West       33.849032
+Name: Profit, dtype: float64
+
+   د) تصنيف العملاء حسب المشتريات:
+Sales
+منخفض    199
+متوسط    198
+جيد      198
+ممتاز    198
+Name: count, dtype: int64
+
+5. التحليل الإضافي...
+   أ) العلاقة بين الكمية والربح:
+   - متوسط الكمية: 3.79
+   - انحراف الكمية: 2.23
+   - متوسط الربح: 28.66
+   - انحراف الربح: 234.26
+   - معامل الارتباط: 0.066
+
+   ب) أداء الفروع:
+                    Sales              ...     Profit
+                      sum        mean  ...       mean         std
+Segment                                ...
+Consumer     1.161401e+06  223.733644  ...  25.836873  242.594020
+Corporate    7.061464e+05  233.823300  ...  30.456667  231.986266
+Home Office  4.296531e+05  240.972041  ...  33.818664  212.381482
+
+[3 rows x 6 columns]
+
+6. إنشاء الرسوم البيانية...
+   ✓ مخطط شريطي: bar_chart.png
+   ✓ مخطط دائري: pie_chart.png
+   ✓ مخطط نقاط: scatter_plot.png
+   ✓ مخطط خطي: line_chart.png
+   ✓ مخطط إضافي: extra_chart.png
+
+7. حفظ النتائج...
+✅ تم الانتهاء من التحليل بنجاح!
+📊 تم حفظ 5 مخططات بيانية
+📄 تم حفظ النتائج في results.txt
+PS C:\Users\PC\Desktop\New folder (2)> print("1. المبيعات لكل Category ")
+Unable to initialize device PRN
+PS C:\Users\PC\Desktop\New folder (2)> & C:/Users/PC/AppData/Local/Programs/Python/Python311/python.exe "c:/Users/PC/Desktop/New folder (2)/al.py"
+المبيعات لكل فئة:
+Category
+Furniture          741999.7953
+Office Supplies    719047.0320
+Technology         836154.0330
+Name: Sales, dtype: float64
+الارباح لكل منطقة:
+Region
+Central     39706.3625
+East        91522.7800
+South       46749.4303
+West       108418.4489
+Name: Profit, dtype: float64
+متوسط الارباح لكل منطقة:
+Region
+Central    17.092709
+East       32.135808
+South      28.857673
+West       33.849032
+Name: Profit, dtype: float64
+الزبائن كيف توزعوا:
+Sales
+قليل     199
+وسط      198
+حلو      198
+ممتاز    198
+Name: count, dtype: int64
+العلاقه بين الكميه والربح:
+متوسط الكميه: 3.79
+الانحراف حق الكميه: 2.23
+متوسط الربح: 28.66
+الانحراف حق الربح: 234.26
+معامل الارتباط: 0.066
+اداء الفروع:
+                    Sales              ...     Profit
+                      sum        mean  ...       mean         std
+Segment                                ...
+Consumer     1.161401e+06  223.733644  ...  25.836873  242.594020
+Corporate    7.061464e+05  233.823300  ...  30.456667  231.986266
+Home Office  4.296531e+05  240.972041  ...  33.818664  212.381482
+
+[3 rows x 6 columns]
